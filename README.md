@@ -51,6 +51,22 @@ uv run python scripts/parse_summaries.py;uv run python scripts/generate_dashboar
 ```
 The project environment will be automatically created by uv on the first run. Per-task calibration results will be saved to `results/chronos2/fev_bench_mini/<task>`. Global summaries will be saved to `results/chronos2/fev_bench_mini`, and an interactive dashboard will be saved to `results/dashboard.html`. Tested on a Windows 10 machine with an NVIDIA RTX 3080 GPU and 16GB RAM.
 
+Full paper results can be reproduced with:
+```bash
+uv run python scripts/forecast.py \
+    --model chronos2 tirex flowstate timesfm \
+    --tasks experiments/fev-bench_mini.yaml \
+    --cal-windows 50
+
+uv run python scripts/cp_eval.py \
+    --forecasters chronos2 tirex flowstate timesfm \
+    --base-datasets fev-bench_mini \
+    --alpha 0.2 \
+    --methods ACI AgACI DtACI PID AcMCP TrailingWindow WeightedCP SplitCP \
+    --score-type abs cqr squared signed iqr_scaled mad_scaled scaled_cqr distributional cdf_tail log diff \
+    --min-cal-windows 1 \
+    --cal-windows 50
+```
 ## Project structure
 
 ```
