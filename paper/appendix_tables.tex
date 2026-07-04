@@ -1,0 +1,451 @@
+% Appendix tables generated automatically by generate_appendix.py
+% Contains all model/method/score combinations
+
+\subsection{Complete Results for Chronos-2}
+The complete evaluation results of all conformal prediction configurations for \textbf{Chronos-2} on FEV-bench mini at $\alpha=0.2$ are presented in Table~\ref{tab:all_results_chronos2}. Widths are scaled relative to the model's native baseline.
+
+\begin{longtable}{lcccc}
+	\caption{All conformal prediction configurations for Chronos-2 on FEV-bench mini ($\alpha=0.2$, Nominal Coverage $1-\alpha=0.80$). columns report Task-Weighted (Task) and Series-Weighted (Series) aggregations.}\\
+	\label{tab:all_results_chronos2}\\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endfirsthead
+	\multicolumn{5}{c}{\tablename\ \thetable\ -- Continued from previous page} \\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endhead
+	\hline \multicolumn{5}{r}{{Continued on next page}} \\
+	\endfoot
+	\hline
+	\endlastfoot
+	ACI + abs & 0.768 & 0.754 & $3.23 \times 10^{285}$ & $3.23 \times 10^{286}$ \\
+	ACI + cdf-tail & 0.831 & 0.831 & $1.238$ & $1.251$ \\
+	ACI + cqr & 0.816 & 0.733 & $7.47 \times 10^{213}$ & $6.02 \times 10^{214}$ \\
+	ACI + diff & 0.808 & 0.748 & $2.238$ & $2.206$ \\
+	ACI + distributional & 0.828 & 0.848 & $1.331$ & $1.773$ \\
+	ACI + iqr-scaled & 0.813 & 0.761 & $1.08 \times 10^{289}$ & $1.04 \times 10^{290}$ \\
+	ACI + log & 0.828 & 0.804 & $2.372$ & $2.890$ \\
+	ACI + mad-scaled & 0.797 & 0.733 & $1.495$ & $1.520$ \\
+	ACI + scaled-cqr & 0.816 & 0.733 & $8.60 \times 10^{288}$ & $6.93 \times 10^{289}$ \\
+	ACI + signed & 0.797 & 0.733 & $7.47 \times 10^{213}$ & $6.02 \times 10^{214}$ \\
+	ACI + squared & 0.389 & 0.110 & $0.428$ & $0.139$ \\
+	AcMCP + abs & 0.722 & 0.735 & $1.721$ & $1.520$ \\
+	AcMCP + cdf-tail & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + cqr & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + diff & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + distributional & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + iqr-scaled & 0.719 & 0.696 & $1.696$ & $1.389$ \\
+	AcMCP + log & 0.652 & 0.547 & $0.957$ & $0.782$ \\
+	AcMCP + mad-scaled & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + scaled-cqr & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + signed & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AcMCP + squared & 0.686 & 0.634 & $1.573$ & $1.188$ \\
+	AgACI + abs & 0.748 & 0.749 & $1.222$ & $1.377$ \\
+	AgACI + cdf-tail & 0.826 & 0.830 & $1.225$ & $1.244$ \\
+	AgACI + cqr & 0.813 & 0.731 & $1.508$ & $1.478$ \\
+	AgACI + diff & 0.802 & 0.745 & $2.248$ & $2.194$ \\
+	AgACI + distributional & 0.825 & 0.847 & $1.335$ & $1.793$ \\
+	AgACI + iqr-scaled & 0.805 & 0.758 & $1.25 \times 10^{7}$ & $1.20 \times 10^{8}$ \\
+	AgACI + log & 0.822 & 0.798 & $1.980$ & $2.432$ \\
+	AgACI + mad-scaled & 0.794 & 0.731 & $1.494$ & $1.504$ \\
+	AgACI + scaled-cqr & 0.813 & 0.731 & $1.508$ & $1.478$ \\
+	AgACI + signed & 0.794 & 0.731 & $1.494$ & $1.504$ \\
+	AgACI + squared & 0.389 & 0.110 & $0.432$ & $0.140$ \\
+	CopulaCPTS + joint & 0.831 & 0.915 & $3.810$ & $3.888$ \\
+	DtACI + abs & 0.750 & 0.757 & $1.264$ & $1.423$ \\
+	DtACI + cdf-tail & 0.840 & 0.834 & $1.273$ & $1.264$ \\
+	DtACI + cqr & 0.815 & 0.731 & $1.540$ & $1.477$ \\
+	DtACI + diff & 0.806 & 0.745 & $2.308$ & $2.195$ \\
+	DtACI + distributional & 0.833 & 0.849 & $1.402$ & $1.836$ \\
+	DtACI + iqr-scaled & 0.815 & 0.770 & $1.23 \times 10^{7}$ & $1.15 \times 10^{8}$ \\
+	DtACI + log & 0.827 & 0.800 & $2.213$ & $2.662$ \\
+	DtACI + mad-scaled & 0.797 & 0.731 & $1.538$ & $1.504$ \\
+	DtACI + scaled-cqr & 0.816 & 0.731 & $1.539$ & $1.478$ \\
+	DtACI + signed & 0.796 & 0.731 & $1.539$ & $1.506$ \\
+	DtACI + squared & 0.390 & 0.109 & $0.439$ & $0.142$ \\
+	Native Quantiles & 0.747 & 0.729 & $1.000$ & $1.000$ \\
+	PID + abs & 0.712 & 0.687 & $2.901$ & $2.817$ \\
+	PID + cdf-tail & 0.811 & 0.805 & $1.172$ & $1.167$ \\
+	PID + cqr & 0.727 & 0.532 & $1.277$ & $0.934$ \\
+	PID + diff & 0.704 & 0.514 & $2.92 \times 10^{285}$ & $2.35 \times 10^{286}$ \\
+	PID + distributional & 0.756 & 0.754 & $1.128$ & $1.457$ \\
+	PID + iqr-scaled & 0.725 & 0.604 & $1.29 \times 10^{7}$ & $1.24 \times 10^{8}$ \\
+	PID + log & 0.690 & 0.605 & $1.875$ & $1.976$ \\
+	PID + mad-scaled & 0.691 & 0.511 & $1.231$ & $0.976$ \\
+	PID + scaled-cqr & 0.727 & 0.532 & $1.278$ & $0.936$ \\
+	PID + signed & 0.691 & 0.511 & $1.231$ & $0.976$ \\
+	PID + squared & 0.369 & 0.103 & $0.416$ & $0.134$ \\
+	SplitCP + abs & 0.739 & 0.682 & $1.325$ & $1.368$ \\
+	SplitCP + cdf-tail & 0.821 & 0.805 & $1.192$ & $1.170$ \\
+	SplitCP + cqr & 0.726 & 0.480 & $1.307$ & $0.869$ \\
+	SplitCP + diff & 0.689 & 0.456 & $1.905$ & $1.419$ \\
+	SplitCP + distributional & 0.757 & 0.736 & $1.134$ & $1.484$ \\
+	SplitCP + iqr-scaled & 0.760 & 0.555 & $1.17 \times 10^{7}$ & $1.12 \times 10^{8}$ \\
+	SplitCP + log & 0.658 & 0.529 & $1.974$ & $2.085$ \\
+	SplitCP + mad-scaled & 0.666 & 0.440 & $1.258$ & $0.927$ \\
+	SplitCP + scaled-cqr & 0.723 & 0.478 & $1.312$ & $0.868$ \\
+	SplitCP + signed & 0.666 & 0.440 & $1.258$ & $0.927$ \\
+	SplitCP + squared & 0.377 & 0.104 & $0.425$ & $0.138$ \\
+	TrailingWindow + abs & 0.730 & 0.746 & $1.073$ & $1.230$ \\
+	TrailingWindow + cdf-tail & 0.809 & 0.805 & $1.156$ & $1.149$ \\
+	TrailingWindow + cqr & 0.742 & 0.683 & $1.132$ & $1.137$ \\
+	TrailingWindow + diff & 0.731 & 0.703 & $1.558$ & $1.735$ \\
+	TrailingWindow + distributional & 0.772 & 0.773 & $1.023$ & $1.159$ \\
+	TrailingWindow + iqr-scaled & 0.770 & 0.727 & $8.20 \times 10^{6}$ & $7.86 \times 10^{7}$ \\
+	TrailingWindow + log & 0.741 & 0.720 & $1.201$ & $1.249$ \\
+	TrailingWindow + mad-scaled & 0.716 & 0.688 & $1.037$ & $1.150$ \\
+	TrailingWindow + scaled-cqr & 0.742 & 0.683 & $1.131$ & $1.136$ \\
+	TrailingWindow + signed & 0.716 & 0.688 & $1.038$ & $1.150$ \\
+	TrailingWindow + squared & 0.359 & 0.101 & $0.353$ & $0.114$ \\
+	WeightedCP + abs & 0.800 & 0.839 & $1.363$ & $1.890$ \\
+	WeightedCP + cdf-tail & 0.829 & 0.840 & $1.226$ & $1.269$ \\
+	WeightedCP + cqr & 0.835 & 0.857 & $1.500$ & $2.038$ \\
+	WeightedCP + diff & 0.828 & 0.850 & $2.164$ & $2.945$ \\
+	WeightedCP + distributional & 0.820 & 0.881 & $1.254$ & $1.650$ \\
+	WeightedCP + iqr-scaled & 0.852 & 0.874 & $1.31 \times 10^{7}$ & $1.54 \times 10^{8}$ \\
+	WeightedCP + log & 0.842 & 0.880 & $2.009$ & $2.721$ \\
+	WeightedCP + mad-scaled & 0.818 & 0.845 & $1.438$ & $2.033$ \\
+	WeightedCP + scaled-cqr & 0.835 & 0.857 & $1.500$ & $2.038$ \\
+	WeightedCP + signed & 0.818 & 0.845 & $1.438$ & $2.033$ \\
+	WeightedCP + squared & 0.442 & 0.182 & $0.459$ & $0.212$ \\
+\end{longtable}
+
+\subsection{Complete Results for FlowState}
+The complete evaluation results of all conformal prediction configurations for \textbf{FlowState} on FEV-bench mini at $\alpha=0.2$ are presented in Table~\ref{tab:all_results_flowstate}. Widths are scaled relative to the model's native baseline.
+
+\begin{longtable}{lcccc}
+	\caption{All conformal prediction configurations for FlowState on FEV-bench mini ($\alpha=0.2$, Nominal Coverage $1-\alpha=0.80$). columns report Task-Weighted (Task) and Series-Weighted (Series) aggregations.}\\
+	\label{tab:all_results_flowstate}\\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endfirsthead
+	\multicolumn{5}{c}{\tablename\ \thetable\ -- Continued from previous page} \\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endhead
+	\hline \multicolumn{5}{r}{{Continued on next page}} \\
+	\endfoot
+	\hline
+	\endlastfoot
+	ACI + abs & 0.762 & 0.724 & $4.63 \times 10^{276}$ & $3.94 \times 10^{277}$ \\
+	ACI + cdf-tail & 0.720 & 0.792 & $1.296$ & $1.261$ \\
+	ACI + cqr & 0.788 & 0.733 & $1.08 \times 10^{286}$ & $9.49 \times 10^{286}$ \\
+	ACI + diff & 0.794 & 0.736 & $2.981$ & $2.526$ \\
+	ACI + distributional & 0.814 & 0.835 & $1.836$ & $1.992$ \\
+	ACI + iqr-scaled & 0.781 & 0.736 & $4.93 \times 10^{290}$ & $4.60 \times 10^{291}$ \\
+	ACI + log & 0.801 & 0.799 & $4.359$ & $4.820$ \\
+	ACI + mad-scaled & 0.790 & 0.723 & $1.45 \times 10^{217}$ & $1.17 \times 10^{218}$ \\
+	ACI + scaled-cqr & 0.810 & 0.735 & $7.65 \times 10^{289}$ & $6.17 \times 10^{290}$ \\
+	ACI + signed & 0.790 & 0.723 & $1.998$ & $1.714$ \\
+	ACI + squared & 0.381 & 0.104 & $0.560$ & $0.170$ \\
+	AcMCP + abs & 0.684 & 0.636 & $1.812$ & $1.430$ \\
+	AcMCP + cdf-tail & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AcMCP + cqr & 0.683 & 0.615 & $1.774$ & $1.353$ \\
+	AcMCP + diff & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AcMCP + distributional & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AcMCP + iqr-scaled & 0.684 & 0.636 & $1.812$ & $1.430$ \\
+	AcMCP + log & 0.619 & 0.558 & $1.345$ & $1.186$ \\
+	AcMCP + mad-scaled & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AcMCP + scaled-cqr & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AcMCP + signed & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AcMCP + squared & 0.676 & 0.582 & $1.702$ & $1.239$ \\
+	AgACI + abs & 0.762 & 0.723 & $1.978$ & $1.135$ \\
+	AgACI + cdf-tail & 0.717 & 0.790 & $1.289$ & $1.257$ \\
+	AgACI + cqr & 0.786 & 0.732 & $1.928$ & $1.675$ \\
+	AgACI + diff & 0.791 & 0.734 & $3.007$ & $2.512$ \\
+	AgACI + distributional & 0.812 & 0.834 & $1.854$ & $2.016$ \\
+	AgACI + iqr-scaled & 0.781 & 0.735 & $24033.8$ & $230257.1$ \\
+	AgACI + log & 0.804 & 0.797 & $3.478$ & $3.894$ \\
+	AgACI + mad-scaled & 0.787 & 0.721 & $2.003$ & $1.702$ \\
+	AgACI + scaled-cqr & 0.806 & 0.734 & $2.040$ & $1.701$ \\
+	AgACI + signed & 0.787 & 0.721 & $2.003$ & $1.702$ \\
+	AgACI + squared & 0.380 & 0.104 & $0.563$ & $0.170$ \\
+	DtACI + abs & 0.768 & 0.733 & $2.055$ & $1.125$ \\
+	DtACI + cdf-tail & 0.720 & 0.792 & $1.298$ & $1.262$ \\
+	DtACI + cqr & 0.791 & 0.738 & $1.973$ & $1.757$ \\
+	DtACI + diff & 0.794 & 0.733 & $3.085$ & $2.516$ \\
+	DtACI + distributional & 0.820 & 0.835 & $1.945$ & $2.059$ \\
+	DtACI + iqr-scaled & 0.785 & 0.745 & $23566.9$ & $216372.4$ \\
+	DtACI + log & 0.803 & 0.795 & $4.087$ & $4.478$ \\
+	DtACI + mad-scaled & 0.791 & 0.720 & $2.057$ & $1.703$ \\
+	DtACI + scaled-cqr & 0.810 & 0.733 & $2.079$ & $1.699$ \\
+	DtACI + signed & 0.791 & 0.720 & $2.055$ & $1.701$ \\
+	DtACI + squared & 0.381 & 0.104 & $0.570$ & $0.172$ \\
+	Native Quantiles & 0.607 & 0.676 & $1.000$ & $1.000$ \\
+	PID + abs & 0.714 & 0.623 & $1.694$ & $0.842$ \\
+	PID + cdf-tail & 0.708 & 0.770 & $1.274$ & $1.202$ \\
+	PID + cqr & 0.732 & 0.585 & $1.770$ & $0.943$ \\
+	PID + diff & 0.693 & 0.503 & $2.496$ & $1.668$ \\
+	PID + distributional & 0.755 & 0.725 & $1.610$ & $1.633$ \\
+	PID + iqr-scaled & 0.731 & 0.633 & $12827.7$ & $109220.2$ \\
+	PID + log & 0.665 & 0.596 & $3.432$ & $3.508$ \\
+	PID + mad-scaled & 0.687 & 0.505 & $1.661$ & $1.104$ \\
+	PID + scaled-cqr & 0.724 & 0.517 & $1.750$ & $1.099$ \\
+	PID + signed & 0.687 & 0.505 & $1.661$ & $1.104$ \\
+	PID + squared & 0.364 & 0.098 & $0.541$ & $0.164$ \\
+	SplitCP + abs & 0.708 & 0.546 & $1.898$ & $1.372$ \\
+	SplitCP + cdf-tail & 0.709 & 0.771 & $1.274$ & $1.205$ \\
+	SplitCP + cqr & 0.741 & 0.533 & $1.972$ & $1.234$ \\
+	SplitCP + diff & 0.678 & 0.446 & $2.570$ & $1.606$ \\
+	SplitCP + distributional & 0.749 & 0.694 & $1.613$ & $1.651$ \\
+	SplitCP + iqr-scaled & 0.732 & 0.558 & $18735.6$ & $174497.5$ \\
+	SplitCP + log & 0.617 & 0.535 & $3.767$ & $3.787$ \\
+	SplitCP + mad-scaled & 0.665 & 0.431 & $1.690$ & $1.051$ \\
+	SplitCP + scaled-cqr & 0.716 & 0.469 & $1.765$ & $1.035$ \\
+	SplitCP + signed & 0.665 & 0.431 & $1.690$ & $1.051$ \\
+	SplitCP + squared & 0.369 & 0.099 & $0.555$ & $0.170$ \\
+	TrailingWindow + abs & 0.716 & 0.693 & $1.492$ & $0.963$ \\
+	TrailingWindow + cdf-tail & 0.709 & 0.772 & $1.268$ & $1.206$ \\
+	TrailingWindow + cqr & 0.732 & 0.697 & $1.552$ & $1.371$ \\
+	TrailingWindow + diff & 0.717 & 0.689 & $2.120$ & $1.987$ \\
+	TrailingWindow + distributional & 0.756 & 0.758 & $1.439$ & $1.329$ \\
+	TrailingWindow + iqr-scaled & 0.737 & 0.707 & $18082.1$ & $166020.6$ \\
+	TrailingWindow + log & 0.720 & 0.717 & $1.766$ & $1.862$ \\
+	TrailingWindow + mad-scaled & 0.709 & 0.676 & $1.435$ & $1.302$ \\
+	TrailingWindow + scaled-cqr & 0.734 & 0.690 & $1.521$ & $1.327$ \\
+	TrailingWindow + signed & 0.710 & 0.676 & $1.434$ & $1.302$ \\
+	TrailingWindow + squared & 0.350 & 0.096 & $0.470$ & $0.142$ \\
+	WeightedCP + abs & 0.793 & 0.821 & $1.953$ & $1.449$ \\
+	WeightedCP + cdf-tail & 0.721 & 0.806 & $1.294$ & $1.278$ \\
+	WeightedCP + cqr & 0.814 & 0.841 & $2.039$ & $2.382$ \\
+	WeightedCP + diff & 0.813 & 0.843 & $2.912$ & $3.509$ \\
+	WeightedCP + distributional & 0.802 & 0.861 & $1.727$ & $1.842$ \\
+	WeightedCP + iqr-scaled & 0.812 & 0.834 & $20701.3$ & $235637.7$ \\
+	WeightedCP + log & 0.824 & 0.882 & $3.541$ & $4.400$ \\
+	WeightedCP + mad-scaled & 0.811 & 0.843 & $1.947$ & $2.394$ \\
+	WeightedCP + scaled-cqr & 0.826 & 0.861 & $2.021$ & $2.416$ \\
+	WeightedCP + signed & 0.811 & 0.843 & $1.947$ & $2.394$ \\
+	WeightedCP + squared & 0.433 & 0.173 & $0.607$ & $0.264$ \\
+\end{longtable}
+
+\subsection{Complete Results for TimesFM}
+The complete evaluation results of all conformal prediction configurations for \textbf{TimesFM} on FEV-bench mini at $\alpha=0.2$ are presented in Table~\ref{tab:all_results_timesfm}. Widths are scaled relative to the model's native baseline.
+
+\begin{longtable}{lcccc}
+	\caption{All conformal prediction configurations for TimesFM on FEV-bench mini ($\alpha=0.2$, Nominal Coverage $1-\alpha=0.80$). columns report Task-Weighted (Task) and Series-Weighted (Series) aggregations.}\\
+	\label{tab:all_results_timesfm}\\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endfirsthead
+	\multicolumn{5}{c}{\tablename\ \thetable\ -- Continued from previous page} \\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endhead
+	\hline \multicolumn{5}{r}{{Continued on next page}} \\
+	\endfoot
+	\hline
+	\endlastfoot
+	ACI + abs & 0.775 & 0.726 & $7.82 \times 10^{286}$ & $6.66 \times 10^{287}$ \\
+	ACI + cdf-tail & 0.838 & 0.844 & $1.235$ & $1.251$ \\
+	ACI + cqr & 0.807 & 0.738 & $5.84 \times 10^{286}$ & $5.15 \times 10^{287}$ \\
+	ACI + diff & 0.806 & 0.740 & $2.149$ & $2.211$ \\
+	ACI + distributional & 0.830 & 0.835 & $7.11 \times 10^{285}$ & $5.73 \times 10^{286}$ \\
+	ACI + iqr-scaled & 0.793 & 0.726 & $1.84 \times 10^{290}$ & $1.72 \times 10^{291}$ \\
+	ACI + log & 0.797 & 0.722 & $7.38 \times 10^{7}$ & $4.55 \times 10^{8}$ \\
+	ACI + mad-scaled & 0.798 & 0.722 & $8.65 \times 10^{289}$ & $6.97 \times 10^{290}$ \\
+	ACI + scaled-cqr & 0.828 & 0.739 & $9.54 \times 10^{288}$ & $7.68 \times 10^{289}$ \\
+	ACI + signed & 0.799 & 0.722 & $8.04 \times 10^{286}$ & $6.48 \times 10^{287}$ \\
+	ACI + squared & 0.400 & 0.146 & $4.74 \times 10^{138}$ & $3.82 \times 10^{139}$ \\
+	AcMCP + abs & 0.709 & 0.671 & $1.356$ & $1.321$ \\
+	AcMCP + cdf-tail & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AcMCP + cqr & 0.708 & 0.650 & $1.327$ & $1.248$ \\
+	AcMCP + diff & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AcMCP + distributional & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AcMCP + iqr-scaled & 0.709 & 0.671 & $1.356$ & $1.321$ \\
+	AcMCP + log & 0.676 & 0.602 & $1.073$ & $1.101$ \\
+	AcMCP + mad-scaled & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AcMCP + scaled-cqr & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AcMCP + signed & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AcMCP + squared & 0.702 & 0.618 & $1.271$ & $1.139$ \\
+	AgACI + abs & 0.774 & 0.725 & $1.409$ & $1.001$ \\
+	AgACI + cdf-tail & 0.835 & 0.842 & $1.224$ & $1.245$ \\
+	AgACI + cqr & 0.805 & 0.738 & $1.433$ & $1.493$ \\
+	AgACI + diff & 0.799 & 0.738 & $2.152$ & $2.199$ \\
+	AgACI + distributional & 0.826 & 0.834 & $1.342$ & $1.799$ \\
+	AgACI + iqr-scaled & 0.791 & 0.726 & $2.162$ & $1.973$ \\
+	AgACI + log & 0.789 & 0.721 & $7.06 \times 10^{7}$ & $4.34 \times 10^{8}$ \\
+	AgACI + mad-scaled & 0.793 & 0.720 & $1.447$ & $1.506$ \\
+	AgACI + scaled-cqr & 0.823 & 0.738 & $1.525$ & $1.509$ \\
+	AgACI + signed & 0.793 & 0.720 & $1.447$ & $1.506$ \\
+	AgACI + squared & 0.399 & 0.146 & $0.423$ & $0.138$ \\
+	DtACI + abs & 0.779 & 0.734 & $1.492$ & $0.995$ \\
+	DtACI + cdf-tail & 0.850 & 0.848 & $1.280$ & $1.267$ \\
+	DtACI + cqr & 0.809 & 0.743 & $1.470$ & $1.583$ \\
+	DtACI + diff & 0.803 & 0.738 & $2.205$ & $2.199$ \\
+	DtACI + distributional & 0.833 & 0.835 & $1.407$ & $1.845$ \\
+	DtACI + iqr-scaled & 0.795 & 0.735 & $2.565$ & $2.125$ \\
+	DtACI + log & 0.796 & 0.720 & $7.06 \times 10^{7}$ & $4.34 \times 10^{8}$ \\
+	DtACI + mad-scaled & 0.798 & 0.719 & $1.493$ & $1.506$ \\
+	DtACI + scaled-cqr & 0.826 & 0.738 & $1.552$ & $1.512$ \\
+	DtACI + signed & 0.798 & 0.719 & $1.493$ & $1.506$ \\
+	DtACI + squared & 0.401 & 0.146 & $0.429$ & $0.140$ \\
+	Native Quantiles & 0.772 & 0.751 & $1.000$ & $1.000$ \\
+	PID + abs & 0.722 & 0.632 & $1.221$ & $0.734$ \\
+	PID + cdf-tail & 0.827 & 0.825 & $1.205$ & $1.182$ \\
+	PID + cqr & 0.750 & 0.607 & $1.309$ & $0.843$ \\
+	PID + diff & 0.705 & 0.512 & $1.782$ & $1.492$ \\
+	PID + distributional & 0.769 & 0.730 & $8.24 \times 10^{16}$ & $6.64 \times 10^{17}$ \\
+	PID + iqr-scaled & 0.740 & 0.631 & $2.399$ & $0.828$ \\
+	PID + log & 0.671 & 0.494 & $2.18 \times 10^{6}$ & $1.19 \times 10^{7}$ \\
+	PID + mad-scaled & 0.694 & 0.519 & $1.208$ & $0.987$ \\
+	PID + scaled-cqr & 0.744 & 0.545 & $1.316$ & $0.997$ \\
+	PID + signed & 0.694 & 0.519 & $1.208$ & $0.987$ \\
+	PID + squared & 0.384 & 0.141 & $0.406$ & $0.132$ \\
+	SplitCP + abs & 0.720 & 0.566 & $1.376$ & $1.243$ \\
+	SplitCP + cdf-tail & 0.831 & 0.826 & $1.214$ & $1.188$ \\
+	SplitCP + cqr & 0.759 & 0.568 & $1.477$ & $1.116$ \\
+	SplitCP + diff & 0.693 & 0.455 & $1.854$ & $1.451$ \\
+	SplitCP + distributional & 0.766 & 0.700 & $1.165$ & $1.464$ \\
+	SplitCP + iqr-scaled & 0.736 & 0.546 & $2.861$ & $3.840$ \\
+	SplitCP + log & 0.626 & 0.430 & $2.25 \times 10^{6}$ & $1.09 \times 10^{7}$ \\
+	SplitCP + mad-scaled & 0.676 & 0.447 & $1.235$ & $0.952$ \\
+	SplitCP + scaled-cqr & 0.738 & 0.508 & $1.345$ & $0.955$ \\
+	SplitCP + signed & 0.676 & 0.447 & $1.235$ & $0.952$ \\
+	SplitCP + squared & 0.388 & 0.142 & $0.415$ & $0.136$ \\
+	TrailingWindow + abs & 0.732 & 0.696 & $1.075$ & $0.831$ \\
+	TrailingWindow + cdf-tail & 0.819 & 0.816 & $1.163$ & $1.147$ \\
+	TrailingWindow + cqr & 0.755 & 0.703 & $1.167$ & $1.230$ \\
+	TrailingWindow + diff & 0.730 & 0.698 & $1.526$ & $1.740$ \\
+	TrailingWindow + distributional & 0.774 & 0.759 & $1.029$ & $1.163$ \\
+	TrailingWindow + iqr-scaled & 0.749 & 0.693 & $1.468$ & $1.606$ \\
+	TrailingWindow + log & 0.721 & 0.681 & $6.88 \times 10^{7}$ & $4.26 \times 10^{8}$ \\
+	TrailingWindow + mad-scaled & 0.723 & 0.677 & $1.036$ & $1.148$ \\
+	TrailingWindow + scaled-cqr & 0.756 & 0.695 & $1.154$ & $1.185$ \\
+	TrailingWindow + signed & 0.723 & 0.677 & $1.036$ & $1.147$ \\
+	TrailingWindow + squared & 0.371 & 0.140 & $0.347$ & $0.113$ \\
+	WeightedCP + abs & 0.810 & 0.830 & $1.421$ & $1.236$ \\
+	WeightedCP + cdf-tail & 0.835 & 0.854 & $1.209$ & $1.258$ \\
+	WeightedCP + cqr & 0.834 & 0.853 & $1.530$ & $2.099$ \\
+	WeightedCP + diff & 0.832 & 0.857 & $2.116$ & $3.043$ \\
+	WeightedCP + distributional & 0.822 & 0.875 & $1.255$ & $1.647$ \\
+	WeightedCP + iqr-scaled & 0.825 & 0.834 & $2.359$ & $5.608$ \\
+	WeightedCP + log & 0.824 & 0.892 & $2.65 \times 10^{6}$ & $2.36 \times 10^{7}$ \\
+	WeightedCP + mad-scaled & 0.827 & 0.856 & $1.434$ & $2.084$ \\
+	WeightedCP + scaled-cqr & 0.848 & 0.876 & $1.531$ & $2.103$ \\
+	WeightedCP + signed & 0.827 & 0.856 & $1.434$ & $2.084$ \\
+	WeightedCP + squared & 0.454 & 0.242 & $0.451$ & $0.210$ \\
+\end{longtable}
+
+\subsection{Complete Results for TiRex}
+The complete evaluation results of all conformal prediction configurations for \textbf{TiRex} on FEV-bench mini at $\alpha=0.2$ are presented in Table~\ref{tab:all_results_tirex}. Widths are scaled relative to the model's native baseline.
+
+\begin{longtable}{lcccc}
+	\caption{All conformal prediction configurations for TiRex on FEV-bench mini ($\alpha=0.2$, Nominal Coverage $1-\alpha=0.80$). columns report Task-Weighted (Task) and Series-Weighted (Series) aggregations.}\\
+	\label{tab:all_results_tirex}\\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endfirsthead
+	\multicolumn{5}{c}{\tablename\ \thetable\ -- Continued from previous page} \\
+	\hline
+	Calibration Method & \multicolumn{2}{c}{Coverage $\uparrow$} & \multicolumn{2}{c}{Scaled Width $\downarrow$} \\
+ & Task & Series & Task & Series \\
+	\hline
+	\endhead
+	\hline \multicolumn{5}{r}{{Continued on next page}} \\
+	\endfoot
+	\hline
+	\endlastfoot
+	ACI + abs & 0.769 & 0.727 & $3.25 \times 10^{276}$ & $2.77 \times 10^{277}$ \\
+	ACI + cdf-tail & 0.846 & 0.872 & $1.210$ & $1.202$ \\
+	ACI + cqr & 0.799 & 0.729 & $3.78 \times 10^{285}$ & $3.33 \times 10^{286}$ \\
+	ACI + diff & 0.801 & 0.748 & $2.066$ & $1.839$ \\
+	ACI + distributional & 0.822 & 0.843 & $4.31 \times 10^{286}$ & $3.47 \times 10^{287}$ \\
+	ACI + iqr-scaled & 0.782 & 0.726 & $3.09 \times 10^{217}$ & $2.87 \times 10^{218}$ \\
+	ACI + log & 0.820 & 0.796 & $7.05 \times 10^{235}$ & $2.49 \times 10^{235}$ \\
+	ACI + mad-scaled & 0.795 & 0.726 & $1.392$ & $1.252$ \\
+	ACI + scaled-cqr & 0.822 & 0.732 & $1.32 \times 10^{280}$ & $1.06 \times 10^{281}$ \\
+	ACI + signed & 0.795 & 0.726 & $5.20 \times 10^{285}$ & $4.19 \times 10^{286}$ \\
+	ACI + squared & 0.388 & 0.102 & $0.409$ & $0.130$ \\
+	AcMCP + abs & 0.697 & 0.666 & $3.775$ & $1.489$ \\
+	AcMCP + cdf-tail & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AcMCP + cqr & 0.695 & 0.647 & $3.632$ & $1.391$ \\
+	AcMCP + diff & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AcMCP + distributional & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AcMCP + iqr-scaled & 0.697 & 0.666 & $3.775$ & $1.489$ \\
+	AcMCP + log & 0.653 & 0.556 & $0.881$ & $0.691$ \\
+	AcMCP + mad-scaled & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AcMCP + scaled-cqr & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AcMCP + signed & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AcMCP + squared & 0.689 & 0.617 & $3.377$ & $1.246$ \\
+	AgACI + abs & 0.770 & 0.726 & $1.386$ & $0.827$ \\
+	AgACI + cdf-tail & 0.843 & 0.869 & $1.200$ & $1.195$ \\
+	AgACI + cqr & 0.800 & 0.728 & $1.358$ & $1.252$ \\
+	AgACI + diff & 0.796 & 0.745 & $2.083$ & $1.830$ \\
+	AgACI + distributional & 0.821 & 0.840 & $1.256$ & $1.475$ \\
+	AgACI + iqr-scaled & 0.782 & 0.725 & $1.93 \times 10^{7}$ & $1.85 \times 10^{8}$ \\
+	AgACI + log & 0.813 & 0.791 & $1.885$ & $2.124$ \\
+	AgACI + mad-scaled & 0.793 & 0.724 & $1.396$ & $1.245$ \\
+	AgACI + scaled-cqr & 0.819 & 0.730 & $1.434$ & $1.270$ \\
+	AgACI + signed & 0.793 & 0.724 & $1.396$ & $1.245$ \\
+	AgACI + squared & 0.387 & 0.102 & $0.413$ & $0.130$ \\
+	DtACI + abs & 0.774 & 0.735 & $1.434$ & $0.822$ \\
+	DtACI + cdf-tail & 0.860 & 0.876 & $1.262$ & $1.225$ \\
+	DtACI + cqr & 0.802 & 0.734 & $1.388$ & $1.300$ \\
+	DtACI + diff & 0.799 & 0.745 & $2.142$ & $1.833$ \\
+	DtACI + distributional & 0.828 & 0.843 & $1.319$ & $1.510$ \\
+	DtACI + iqr-scaled & 0.785 & 0.735 & $1.95 \times 10^{7}$ & $1.76 \times 10^{8}$ \\
+	DtACI + log & 0.819 & 0.792 & $2.215$ & $2.435$ \\
+	DtACI + mad-scaled & 0.796 & 0.724 & $1.432$ & $1.244$ \\
+	DtACI + scaled-cqr & 0.822 & 0.730 & $1.462$ & $1.269$ \\
+	DtACI + signed & 0.796 & 0.724 & $1.435$ & $1.245$ \\
+	DtACI + squared & 0.389 & 0.102 & $0.418$ & $0.132$ \\
+	Native Quantiles & 0.782 & 0.795 & $1.000$ & $1.000$ \\
+	PID + abs & 0.720 & 0.627 & $1.183$ & $0.610$ \\
+	PID + cdf-tail & 0.835 & 0.861 & $1.150$ & $1.136$ \\
+	PID + cqr & 0.745 & 0.598 & $1.230$ & $0.689$ \\
+	PID + diff & 0.700 & 0.516 & $1.92 \times 10^{285}$ & $1.55 \times 10^{286}$ \\
+	PID + distributional & 0.758 & 0.749 & $1.082$ & $1.208$ \\
+	PID + iqr-scaled & 0.732 & 0.633 & $8.36 \times 10^{6}$ & $7.12 \times 10^{7}$ \\
+	PID + log & 0.685 & 0.598 & $1.836$ & $1.857$ \\
+	PID + mad-scaled & 0.692 & 0.512 & $1.156$ & $0.805$ \\
+	PID + scaled-cqr & 0.738 & 0.534 & $1.221$ & $0.805$ \\
+	PID + signed & 0.692 & 0.512 & $1.156$ & $0.805$ \\
+	PID + squared & 0.373 & 0.096 & $0.397$ & $0.125$ \\
+	SplitCP + abs & 0.712 & 0.558 & $1.321$ & $1.002$ \\
+	SplitCP + cdf-tail & 0.839 & 0.861 & $1.167$ & $1.151$ \\
+	SplitCP + cqr & 0.757 & 0.549 & $1.384$ & $0.910$ \\
+	SplitCP + diff & 0.685 & 0.456 & $1.770$ & $1.176$ \\
+	SplitCP + distributional & 0.754 & 0.727 & $1.082$ & $1.224$ \\
+	SplitCP + iqr-scaled & 0.723 & 0.555 & $1.06 \times 10^{7}$ & $9.87 \times 10^{7}$ \\
+	SplitCP + log & 0.650 & 0.527 & $2.043$ & $2.023$ \\
+	SplitCP + mad-scaled & 0.668 & 0.440 & $1.179$ & $0.766$ \\
+	SplitCP + scaled-cqr & 0.738 & 0.490 & $1.250$ & $0.755$ \\
+	SplitCP + signed & 0.668 & 0.440 & $1.179$ & $0.766$ \\
+	SplitCP + squared & 0.375 & 0.097 & $0.406$ & $0.129$ \\
+	TrailingWindow + abs & 0.722 & 0.698 & $1.032$ & $0.709$ \\
+	TrailingWindow + cdf-tail & 0.827 & 0.850 & $1.131$ & $1.105$ \\
+	TrailingWindow + cqr & 0.745 & 0.690 & $1.107$ & $1.024$ \\
+	TrailingWindow + diff & 0.724 & 0.701 & $1.462$ & $1.465$ \\
+	TrailingWindow + distributional & 0.764 & 0.770 & $0.980$ & $0.997$ \\
+	TrailingWindow + iqr-scaled & 0.737 & 0.694 & $1.63 \times 10^{7}$ & $1.49 \times 10^{8}$ \\
+	TrailingWindow + log & 0.737 & 0.712 & $1.103$ & $1.124$ \\
+	TrailingWindow + mad-scaled & 0.715 & 0.682 & $0.987$ & $0.986$ \\
+	TrailingWindow + scaled-cqr & 0.748 & 0.683 & $1.089$ & $0.990$ \\
+	TrailingWindow + signed & 0.715 & 0.682 & $0.985$ & $0.967$ \\
+	TrailingWindow + squared & 0.358 & 0.095 & $0.339$ & $0.107$ \\
+	WeightedCP + abs & 0.803 & 0.826 & $1.356$ & $0.998$ \\
+	WeightedCP + cdf-tail & 0.842 & 0.876 & $1.190$ & $1.216$ \\
+	WeightedCP + cqr & 0.825 & 0.844 & $1.421$ & $1.695$ \\
+	WeightedCP + diff & 0.825 & 0.853 & $1.998$ & $2.398$ \\
+	WeightedCP + distributional & 0.810 & 0.868 & $1.182$ & $1.372$ \\
+	WeightedCP + iqr-scaled & 0.814 & 0.833 & $1.39 \times 10^{7}$ & $1.58 \times 10^{8}$ \\
+	WeightedCP + log & 0.844 & 0.876 & $1.981$ & $2.447$ \\
+	WeightedCP + mad-scaled & 0.821 & 0.852 & $1.348$ & $1.649$ \\
+	WeightedCP + scaled-cqr & 0.839 & 0.866 & $1.413$ & $1.709$ \\
+	WeightedCP + signed & 0.821 & 0.852 & $1.348$ & $1.649$ \\
+	WeightedCP + squared & 0.438 & 0.166 & $0.440$ & $0.198$ \\
+\end{longtable}

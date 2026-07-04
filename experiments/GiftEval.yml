@@ -1,0 +1,255 @@
+source: data/GiftEval
+output_dir: results
+name: GiftEval
+to_univariate: true
+cal_windows: -1
+datasets:
+  m4_yearly:
+    short:
+      prediction_length: 6
+  m4_quarterly:
+    short:
+      prediction_length: 8
+  m4_monthly:
+    short:
+      prediction_length: 18
+  m4_weekly:
+    short:
+      prediction_length: 13
+  m4_daily:
+    short:
+      prediction_length: 14
+  m4_hourly:
+    short:
+      prediction_length: 48
+  electricity/15T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  electricity/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  electricity/D:
+    short:
+      prediction_length: 30
+  electricity/W:
+    short:
+      prediction_length: 8
+  solar/10T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  solar/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  solar/D:
+    short:
+      prediction_length: 30
+  solar/W:
+    short:
+      prediction_length: 8
+  hospital:
+    short:
+      prediction_length: 8
+  covid_deaths:
+    short:
+      prediction_length: 8
+  us_births/D:
+    short:
+      prediction_length: 30
+  us_births/M:
+    short:
+      prediction_length: 12
+  us_births/W:
+    short:
+      prediction_length: 8
+  saugeenday/D:
+    short:
+      prediction_length: 30
+  saugeenday/M:
+    short:
+      prediction_length: 12
+  saugeenday/W:
+    short:
+      prediction_length: 8
+  temperature_rain_with_missing:
+    short:
+      prediction_length: 30
+  kdd_cup_2018_with_missing/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  kdd_cup_2018_with_missing/D:
+    short:
+      prediction_length: 30
+  car_parts_with_missing:
+    short:
+      prediction_length: 12
+  restaurant:
+    short:
+      prediction_length: 30
+  hierarchical_sales/D:
+    short:
+      prediction_length: 30
+  hierarchical_sales/W:
+    short:
+      prediction_length: 8
+  LOOP_SEATTLE/5T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  LOOP_SEATTLE/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  LOOP_SEATTLE/D:
+    short:
+      prediction_length: 30
+  SZ_TAXI/15T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  SZ_TAXI/H:
+    short:
+      prediction_length: 48
+  M_DENSE/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  M_DENSE/D:
+    short:
+      prediction_length: 30
+  ett1/15T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  ett1/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  ett1/D:
+    short:
+      prediction_length: 30
+  ett1/W:
+    short:
+      prediction_length: 8
+  ett2/15T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  ett2/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  ett2/D:
+    short:
+      prediction_length: 30
+  ett2/W:
+    short:
+      prediction_length: 8
+  jena_weather/10T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  jena_weather/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  jena_weather/D:
+    short:
+      prediction_length: 30
+  bitbrains_fast_storage/5T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  bitbrains_fast_storage/H:
+    short:
+      prediction_length: 48
+  bitbrains_rnd/5T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  bitbrains_rnd/H:
+    short:
+      prediction_length: 48
+  bizitobs_application:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  bizitobs_service:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  bizitobs_l2c/5T:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720
+  bizitobs_l2c/H:
+    short:
+      prediction_length: 48
+    medium:
+      prediction_length: 480
+    long:
+      prediction_length: 720

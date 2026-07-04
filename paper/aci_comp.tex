@@ -1,0 +1,42 @@
+\label{subsec:conformal_comparison}
+
+When applying conformalized quantile regression (CQR) scores to pre-trained Time Series Foundation Models (TSFMs) such as Chronos-2, the nonconformity score at time \(t\) for a given horizon step is defined as:
+\begin{equation}
+	s_t = \max(q_{\text{low}, t} - y_t, \, y_t - q_{\text{high}, t})
+\end{equation}
+where \(q_{\text{low}, t}\) and \(q_{\text{high}, t}\) represent the native lower and upper quantile predictions. Because the foundation model's native quantile outputs are already pre-calibrated to a target coverage rate of \(1-\alpha\), the distribution of \(s_t\) exhibits a high density (point mass) around \(0\), with a tail of positive values corresponding to rare boundary violations.
+
+Applying adaptive calibration methods to these scores reveals stark differences in performance, particularly when evaluated using the Winkler score:
+\begin{equation}
+	W_t = (U_t - L_t) + \frac{2}{\alpha} \max(L_t - y_t, \, y_t - U_t, \, 0)
+\end{equation}
+where \([L_t, U_t]\) is the constructed prediction interval. The major differences between ACI, AgACI, and DtACI are detailed below.
+
+\paragraph{Continuous vs. Binary Feedback}
+Adaptive Conformal Inference (ACI) \cite{aci} and its aggregated variant AgACI \cite{agaci} rely on a binary feedback loop:
+\begin{equation}
+	e_t = \mathbb{I}(s_t > q_t) \in \{0, 1\}
+\end{equation}
+which updates the nominal parameters via \(\alpha_{t+1} = \alpha_t + \gamma (\alpha - e_t)\). Near the spike at \(0\) in the CQR score distribution, this binary feedback creates severe \textit{on-off oscillations}. Small noise fluctuations induce sequential violations (\(e_t=1\)) followed by consecutive coverages (\(e_t=0\)). This causes the intervals to alternate between being overly wide (inflating the width term of the Winkler score) and overly narrow (incurring the heavy \(\frac{2}{\alpha}\) miscoverage penalty), resulting in a worse Winkler score than the native baseline.
+
+Conversely, DtACI \cite{dtaci} utilizes the continuous empirical error rate \(\beta_t \in [0,1]\) of the new score relative to the rolling window of scores:
+\begin{equation}
+	\beta_t = \frac{1}{n} \sum_{i=1}^n \mathbb{I}(s_{t-i} > s_t)
+\end{equation}
+By replacing the binary feedback with a smooth quantile location, DtACI eliminates high-frequency boundary oscillations, leading to stable interval widths.
+
+\paragraph{Parameter Averaging vs. Randomized Sampling}
+AgACI aggregates a grid of candidate step-sizes by taking a linear convex combination of the experts' nominal levels:
+\begin{equation}
+	\alpha_t = \sum_{k=1}^K p_t^k \alpha_t^k
+\end{equation}
+Because the mapping from the nominal level \(\alpha_t\) to the empirical quantile \(Q(1-\alpha_t)\) is highly non-linear, parameter averaging is mathematically sub-optimal. It often yields biased quantiles that over-cover without optimizing interval efficiency.
+
+DtACI solves this by randomly sampling the expert at each step according to the probability vector \(p_t\). This guarantees that the aggregated sequence inherits the regret bounds of the best performing expert.
+
+\paragraph{Equivalence to Pinball Loss Minimization}
+The Winkler score is mathematically equivalent to the pinball loss \(\rho_\alpha(\cdot)\) up to a scaling factor. ACI and AgACI are formulated as reactive controllers that do not optimize a specific loss. DtACI, however, is explicitly framed within the context of online convex optimization, updating its expert weights by minimizing the pinball loss of the empirical error rates:
+\begin{equation}
+	\ell(\beta_t, \alpha_{\text{exp}}) = \rho_\alpha(\beta_t - \alpha_{\text{exp}})
+\end{equation}
+Because DtACI directly minimizes the pinball loss of the quantiles, it is theoretically guaranteed to minimize the objective measured by the Winkler score.
